@@ -6,9 +6,20 @@ header {
     justify-content: space-between;
     margin-top: 20px;
 
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
     nav {
         display: flex;
         align-items: center;
+        margin-top: 15px;
+
+        @media @mobile {
+            justify-content: space-evenly;
+        }
 
         a {
             margin-right: 30px;
