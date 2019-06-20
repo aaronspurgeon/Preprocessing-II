@@ -197,6 +197,9 @@ header nav a {
   text-decoration: none;
   color: black;
 }
+header nav a:hover {
+  color: #17A2B8;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
