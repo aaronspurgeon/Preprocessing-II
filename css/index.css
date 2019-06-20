@@ -169,6 +169,7 @@ img {
   margin: 0 auto;
 }
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -180,9 +181,15 @@ header nav a {
   color: black;
   padding-top: 20px;
 }
+.intro {
+  width: 100%;
+}
 .intro img {
   margin: 20px 0 20px 0;
   border-top: 2px dashed #C0C0C0;
+}
+.intro p {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .footer {
   width: 100%;

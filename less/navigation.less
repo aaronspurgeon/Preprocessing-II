@@ -1,6 +1,7 @@
 // Navigation Styles here
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -18,9 +19,14 @@ header {
 }
 
 .intro {
+    width: 100%;
 
     img {
         margin: 20px 0 20px 0;
-        border-top: 2px dashed @navigation-border;
+        border-top: @border;
+    }
+
+    p {
+        border-bottom: @border;
     }
 }
