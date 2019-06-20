@@ -196,6 +196,7 @@ header nav a {
   font-size: 1.4rem;
   text-decoration: none;
   color: black;
+  transition: all 0.2s linear;
 }
 header nav a:hover {
   color: #17A2B8;
@@ -218,6 +219,7 @@ header nav a:hover {
 }
 .home .intro {
   width: 100%;
+  margin-bottom: 30px;
 }
 .home .intro img {
   margin: 20px 0 20px 0;
@@ -245,7 +247,6 @@ header nav a:hover {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-    margin-top: 30px;
   }
 }
 .home .content-section .img-content {
@@ -330,6 +331,10 @@ header nav a:hover {
   color: white;
   font-size: 1.7rem;
   text-align: center;
+  transition: all 0.3s linear;
+}
+.home .content-pick .destination a:hover {
+  background-color: #1fc8e3;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination a {
