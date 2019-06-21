@@ -172,7 +172,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 @media (max-width: 500px) {
   header {
@@ -180,6 +179,9 @@ header {
     justify-content: center;
     text-align: center;
   }
+}
+header h1 {
+  padding-top: 20px;
 }
 header nav {
   display: flex;
@@ -224,6 +226,11 @@ header nav a:hover {
   width: 100%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    margin-bottom: 0;
+  }
+}
 .home .intro img {
   margin: 20px 0 20px 0;
   border-top: 2px dashed #C0C0C0;
@@ -232,7 +239,6 @@ header nav a:hover {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
-  margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -250,6 +256,7 @@ header nav a:hover {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
+    margin-top: 30px;
   }
 }
 .home .content-section .img-content {
