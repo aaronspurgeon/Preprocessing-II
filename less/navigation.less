@@ -1,1 +1,37 @@
 // Navigation Styles here
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 20px;
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 20px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+
+        @media @mobile {
+            justify-content: space-evenly;
+        }
+
+        a {
+            margin-right: 30px;
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: black;
+            .aTagHover(@eastern-blue, none, all, 0.2s);
+        }
+    }
+}
+

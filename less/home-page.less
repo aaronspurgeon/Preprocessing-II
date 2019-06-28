@@ -1,31 +1,74 @@
 .home {
+  @media @mobile {
+    padding: 5%;
+  }
+
+  .intro {
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media @mobile {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin: 20px 0 20px 0;
+      border-top: @border;
+    }
+
+    p {
+      border-bottom: @border;
+    }
+  }
 
   .content-section {
-    margin: 30px 0;
+    // margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      flex-flow: column wrap;
+      margin: 0;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      margin-top: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding-left: 0;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border;
+    margin-bottom: 30px;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +85,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+      margin-top: 30px;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -49,13 +97,44 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: @border;
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 100%;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+
+      @media @mobile {
+        width: 80%;
+        text-align: left;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        background-color: @eastern-blue;
+        padding: 10px 60px 10px 60px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        text-align: center;
+        .btn(white, lighten(@eastern-blue, 10%), all, 0.3s);
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
     }
   }
-}// home
+} // home
